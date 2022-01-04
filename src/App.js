@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./NotFound/NotFound";
 import Explore from "./Pages/Explore/Explore/Explore";
+import Sidebar from "./Pages/Sidebar/Sidebar";
 
 function App() {
   return (
@@ -37,7 +38,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <PrivateRoute path="/dashboard"></PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <Sidebar />
+            </PrivateRoute>
             <Route path="/register">
               <Register />
             </Route>

@@ -40,7 +40,33 @@
       "price": "420",
       "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
       "img": "https://i.ibb.co/NKCkV1z/7.jpg"
+    },
+    {
+      "id": 7,
+      "name":  "Spring Hinges 7J1030",
+      "price": "320",
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/3NXXhRd/8.jpg"
+    }, 
+    {
+      "id": 8,
+      "name":  "Round Flip Glass",
+      "price": "222",
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/7kyzQrq/5.jpg"
+    }, 
+    {
+      "id": 9,
+      "name":  "Beach Aviator Glass",
+      "price": "420",
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/8cWGGq5/10.jpg"
+    }, 
+    {
+      "id": 10,
+      "name":  "Sunglass P117WH3",
+      "price": "220",
+      "description": "The best sunglasses brands on the market are ones that combine quality and style. Think: Ray-Ban, Oliver Peoples and Prada, just to name a few.",
+      "img": "https://i.ibb.co/XkKfMJs/2.jpg"
     }
-
-    
 ]
