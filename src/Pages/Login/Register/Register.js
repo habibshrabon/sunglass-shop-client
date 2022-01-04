@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import { Alert, Spinner } from "react-bootstrap";
-import { Link, useLocation, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Header from "../../Shared/Header/Header";
-import "./Login.css";
+import "../Login/Login.css";
 
-const Login = () => {
+const Register = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, loginUser, isLoading, authError } = useAuth();
+  const { user, registerUser, authError, isLoading } = useAuth();
 
-  const location = useLocation();
   const history = useHistory();
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -21,18 +25,32 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const handleSignUp = (e) => {
-    loginUser(email, password, location, history);
-
+  const handleLoginSubmit = (e) => {
+    registerUser(name, email, password, history);
     e.preventDefault();
   };
   return (
     <>
       <Header />
+
       <div className="text-center container my-5 login">
         {!isLoading && (
-          <form onSubmit={handleSignUp}>
-            <h3 className="text-primary">Please Login</h3>
+          <form onSubmit={handleLoginSubmit}>
+            <h3 className="text-primary">Please Register</h3>
+            <div className="row mb-3">
+              <label htmlFor="inputName" className="col-sm-2 col-form-label">
+                Name
+              </label>
+              <div className="col-sm-10">
+                <input
+                  onBlur={handleNameChange}
+                  type="text"
+                  className="form-control"
+                  id="inputName"
+                  required
+                />
+              </div>
+            </div>
             <div className="row mb-3">
               <label htmlFor="inputName" className="col-sm-2 col-form-label">
                 Email
@@ -69,18 +87,22 @@ const Login = () => {
               <div className="col-sm-10 offset-sm-2"></div>
             </div>
             <button type="submit" className="btn btn-primary">
-              Login
+              Register
             </button>
             <br />
-            <Link to="/register">New User? Please Register</Link>
+            <Link to="/login">
+              Already Registered? <br /> Please Login
+            </Link>
           </form>
         )}
         {isLoading && <Spinner animation="border" variant="danger" />}
-        {user?.email && <Alert variant="primary">Login Successful</Alert>}
+        {user?.email && (
+          <Alert variant="primary">Registration Successful</Alert>
+        )}
         {authError && <Alert variant="danger">{authError}</Alert>}
       </div>
     </>
   );
 };
 
-export default Login;
+export default Register;
