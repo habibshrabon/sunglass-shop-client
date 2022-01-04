@@ -6,6 +6,7 @@ import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import ProductDetails from "./ProductDetails/ProductDetails";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
+import Contact from "./Pages/Home/Contact/Contact";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
             <PrivateRoute path="/dashboard"></PrivateRoute>
             <Route path="/register">
