@@ -7,6 +7,7 @@ import ProductDetails from "./ProductDetails/ProductDetails";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./NotFound/NotFound";
+import Explore from "./Pages/Explore/Explore/Explore";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            <Route path="/explore"></Route>
+            <Route path="/explore">
+              <Explore />
+            </Route>
             <PrivateRoute path="/addProduct"></PrivateRoute>
             <PrivateRoute path="/manageProduct"></PrivateRoute>
             <PrivateRoute path="/manageOrder"></PrivateRoute>
