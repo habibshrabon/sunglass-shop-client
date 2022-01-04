@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Spinner } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Testimonial from "./Testimonial";
 import "./Testimonial.css";
 

@@ -9,6 +9,10 @@ import Register from "./Pages/Login/Register/Register";
 import NotFound from "./NotFound/NotFound";
 import Explore from "./Pages/Explore/Explore/Explore";
 import Sidebar from "./Pages/Sidebar/Sidebar";
+import AddProduct from "./Pages/Dashboard/AddProduct/AddProduct";
+import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
+import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
+import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 
 function App() {
   return (
@@ -25,22 +29,30 @@ function App() {
             <Route path="/explore">
               <Explore />
             </Route>
-            <PrivateRoute path="/addProduct"></PrivateRoute>
-            <PrivateRoute path="/manageProduct"></PrivateRoute>
-            <PrivateRoute path="/manageOrder"></PrivateRoute>
-            <PrivateRoute path="/makeAdmin"></PrivateRoute>
-            <PrivateRoute path="/myOrders"></PrivateRoute>
-            <PrivateRoute path="/payment"></PrivateRoute>
-            <PrivateRoute path="/review"></PrivateRoute>
-            <PrivateRoute path="/productDetails/:productId">
+            <Route path="/addProduct">
+              <AddProduct />
+            </Route>
+            <Route path="/manageProduct">
+              <ManageProduct />
+            </Route>
+            <Route path="/manageOrder">
+              <ManageAllOrders />
+            </Route>
+            <Route path="/makeAdmin">
+              <MakeAdmin />
+            </Route>
+            <Route path="/myOrders"></Route>
+            <Route path="/payment"></Route>
+            <Route path="/review"></Route>
+            <Route path="/productDetails/:productId">
               <ProductDetails />
-            </PrivateRoute>
+            </Route>
             <Route path="/login">
               <Login />
             </Route>
-            <PrivateRoute path="/dashboard">
+            <Route path="/dashboard">
               <Sidebar />
-            </PrivateRoute>
+            </Route>
             <Route path="/register">
               <Register />
             </Route>
