@@ -13,6 +13,9 @@ import AddProduct from "./Pages/Dashboard/AddProduct/AddProduct";
 import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
+import MyOrders from "./Pages/Dashboard/MyOrders/MyOrders";
+import Payment from "./Pages/Dashboard/Payment/Payment";
+import Reviews from "./Pages/Dashboard/Reviews/Reviews";
 
 function App() {
   return (
@@ -41,9 +44,15 @@ function App() {
             <Route path="/makeAdmin">
               <MakeAdmin />
             </Route>
-            <Route path="/myOrders"></Route>
-            <Route path="/payment"></Route>
-            <Route path="/review"></Route>
+            <Route path="/myOrders">
+              <MyOrders />
+            </Route>
+            <Route path="/payment">
+              <Payment />
+            </Route>
+            <Route path="/review">
+              <Reviews />
+            </Route>
             <Route path="/productDetails/:productId">
               <ProductDetails />
             </Route>
