@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "name": "Wayfarer Sunglasses(Green)",
+      "price": "220",
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/fdQ8S3w/4.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Wayfarer Unisex Spectacle",
+      "price": "250",
+      "description": "The best sunglasses brands on the market are ones that combine quality and style. Think: Ray-Ban, Oliver Peoples and Prada, just to name a few.",
+      "img": "https://i.ibb.co/KmXgD23/6.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rim Spectacle Frame",
+      "price": "190",
+      "description": "Each of these top sunglasses brands produces first-rate sunglasses that highlight hallmark design, impeccable craftsmanship, durable materials and high-quality",
+      "img": "https://i.ibb.co/7NLTSxd/1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Square Men Sunglass",
+      "price": "160",
+      "description": "The best sunglasses brands on the market are ones that combine quality and style. Think: Ray-Ban, Oliver Peoples and Prada, just to name a few.",
+      "img": "https://i.ibb.co/gWWtPGd/3.jpg"
+    },
+    {
+      "id": 5,
+      "name": "UV Protected Sports",
+      "price": "370",
+      "description": "Each of these top sunglasses brands produces first-rate sunglasses that highlight hallmark design, impeccable craftsmanship, durable materials and high-quality",
+      "img": "https://i.ibb.co/f4ZVYBd/9.jpg"
+    },
+    {
+      "id": 6,
+      "name":  "Sunglass Ac010(Blue)",
+      "price": "420",
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/NKCkV1z/7.jpg"
+    }
+
+    
+]
