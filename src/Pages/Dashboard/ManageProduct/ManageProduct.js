@@ -7,14 +7,14 @@ const ManageProduct = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://fierce-sea-69745.herokuapp.com/products")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
   const handleDelete = (id) => {
     if (confirm("You are deleting a product!!")) {
-      const url = `https://fierce-sea-69745.herokuapp.com/products/${id}`;
+      const url = `http://localhost:5000/products/${id}`;
       fetch(url, {
         method: "DELETE",
       })

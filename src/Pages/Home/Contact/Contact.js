@@ -57,11 +57,11 @@ const Contact = () => {
                   <strong>Address:</strong> 12/13 Dhanmandi Dhaka, 1214.
                 </p>
                 <p>
-                  <strong>Phone:</strong> +88 0187966431
+                  <strong>Phone:</strong> +88 01712334455
                 </p>
 
                 <p>
-                  <strong>Email:</strong> fahad@gmail.com
+                  <strong>Email:</strong> habib@gmail.com
                 </p>
               </div>
             </div>

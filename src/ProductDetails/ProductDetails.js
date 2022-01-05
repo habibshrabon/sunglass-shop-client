@@ -22,7 +22,7 @@ const ProductDetails = () => {
     const productDetails = product;
     data.item = productDetails;
     data.status = "pending";
-    axios.post("/products.json", data).then((res) => {
+    axios.post("http://localhost:5000/products", data).then((res) => {
       if (res.data.insertedId) {
         alert("Order Placed successfully");
         reset();
@@ -30,7 +30,7 @@ const ProductDetails = () => {
     });
   };
   useEffect(() => {
-    fetch(`/products.json/${productId}`)
+    fetch(`http://localhost:5000/products/${productId}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

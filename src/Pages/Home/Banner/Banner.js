@@ -9,7 +9,7 @@ const Banner = () => {
           <div className="col-md-6"></div>
           <div className="col-md-6 text-white text-start banner-text">
             <h1 className="fw-bold mb-4 fs-1 text-black">
-              <span className="highlight-text">Glassy Yard</span> & Gallery
+              <span className="highlight-text">Glassy Shop</span> & Gallery
             </h1>
             <p className="fs-5 fw-bold text-color mb-4">
               Sunglass improves personality and smartness. But You need perfect
