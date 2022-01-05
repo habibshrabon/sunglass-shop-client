@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# The project name is GLASSY SHOP.
 
 The project name is [GLASSY SHOP](https://github.com/facebook/create-react-app).
 
